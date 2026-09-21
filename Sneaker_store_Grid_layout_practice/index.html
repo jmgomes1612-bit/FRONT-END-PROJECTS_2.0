@@ -13,7 +13,52 @@
         <p class="logo">Lorem<span>Ipsum</span></p>
         <button>Inicio</button>
     </header>
+    <aside id="sidebar">
     
+        <nav>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABTElEQVR4nO2ZQU7DMBBF377AEWg5TLgHXcGm3QPngPZ2hJ4A1m0HWZpKVVS3tpPag+Iv/U00jv9z7MRyoKqqqsq6ZsAa2ABbQK7srfa10r576RH4zRBaPHZ9N6nhHwqHF/UPME0BWBsIL+rPFICNgeCiblMAcixYCbTLEi0x5miVDiwVgJEAvAITYAnsAupdzULbvFsAuDlqM78AsdOag+4sALjRJACiG95paQFgD7x02j51IFzNcyCo5Aa4BDFEeLk2gG+KzD3XYsNLDgDfkxgivOQCOAfRJ7zkBujO+VML2ySAL/wQENEa1SLen3lVhnwnpCRAyHv+VE0shMmtxMICwCQgvA/i9r9vp98sAORytEoHlgqALY/vYOvbQHBRf6UArAwEF/VHCsDM0PH6PYlq9AYlwzf01FTP59uMv5hanTbJI19VVVVFFv0Bbot+QiC4KBsAAAAASUVORK5CYII=" alt="close-window" class="close-btn">
+ 
+        <div class="options">
+        <div class="option"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+        <button class="btn">Carrinho</button>
+        </div>
+        
+        <div class="option">
+            <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/25/shoes.png" alt="shoes"/>
+        <button class="btn">Categorias</button>
+        </div>
+        
+        <div class="option"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABB0lEQVR4nO3UsSvEYRgH8E/IYjulTJRkkrIoKSWDgbIY2KwWmVikZBCriZLFZDCQLKQY+CuuKFYKEUVXrzrXnfvduZ/F+6ln+r3P833qffsRRVEUfVcXKm1tmMRA4YexlAKbMIxV7GEemcJDo5irUWAD+rGEC7zhBOOoL9aQwV1YolqdmME+7vGBZ2yhu1zzdmiYriAwt/QENpEN/V91jQU0JxnUgffQePrDI2zEIFZwldeTX+dhqdwVJLZRMOQYI+gKr3QWh3gsEpirF+ygV5WyJQaXq1ssosUvPVUYfImpcCU1cZYg9BW76JOCHjyUCL7BMlqlrB1rOMIB1jH0R7/lKIqif+4Tp9pfiyZPvxQAAAAASUVORK5CYII=" alt="nike">
+            <button class="btn">Nike</button>
+        </div>
+        
+        <div class="option">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABAklEQVR4nO3SvyuFYRjG8Q91DAwMkkksspgYrCxGi0kpO3VGxX8gm43FJP8A/wB2Jukogx+LQSQUobce9XY699sbpyzvVXdPPffd97qeH1Sq9J/qxxbuMNFOcBfqeMBXqjPU2gGv4TwHztf6X8AdGE/raWDwhrHfwKdwkiBrmMR7YHKMzrLgYezjMwd4TSk3AoOsVsoaXAaAI/SgEfSfMBRBB9MP6cVmQcplTDedLl+HzeBurOIxDeymvUYAeMYItgtCLP7A53HdYmAWMwUpD9CH26B/j4HM4CYYuEp3vVOQcgFzBf29zGAJHy2aLxhNKaMHz95JutJW/YuyP6pSJaG+AQLDkPScNf8eAAAAAElFTkSuQmCC" alt="external-adidas-a-multinational-corporation-that-designs-and-manufactures-shoes-clothing-and-accessories-fashion-bold-tal-revivo">
+        <button class="btn">Adidas</button>
+        </div>
+        
+        <div class="option">
+            <img src="src/img/newalanceSVG.svg" alt="">
+        <button class="btn">New Balance</button>
+        </div>
+        
+        <div class="option">
+            <img src="src/img/jordan-svgrepo-com.svg" alt="">
+        <button class="btn">Jordan</button>
+        </div>
+
+        <div class="option">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABWElEQVR4nO2TO0tDQRCFPxPxUduK8RdY+A/sNI0ExBeWghaiTdAmgkUKG7GzDUiwsLMUGytBUfDVKFpZaGOCqEXEJDJwVoYlXRqFe2CZOzs7c2bP7IUECf4FroCFFvtDwAfQbGNdWqFj4AFIRQQ7wCew2caas0LTYht1xXuBKrALZHQmYCAkCv3AhIstA2vAONBhm13AC3DgkmZFOgKUgAYwqNi6Yjn5BeBbjVQjibZCwaIOWQeGI+AR6AYqOpxXbEO+NdXn/BVZm10aKAOvgSAjgqK+6+o0q6R34DQiqAF7zs/JliXREjDph2oSPYukrtuUJM+JkykULMiey5re28BbK4kMY9r8Ag41m0qkad4RdAIXLjalJ5/W2tdMfpGS7k29miBPVvEzyRQIwr9SayGRyfsU/gOPReAe6FFHt7qJYR64BmaAG5ezCtxFEjV0m+GYIEGCP4gfMpB/+POdQ58AAAAASUVORK5CYII=" alt="external-vans-an-american-manufacturer-of-skateboarding-shoes-fashion-bold-tal-revivo">
+        <button class="btn">Vans on the walls</button>
+        </div>
+        <div>
+        <i class="fa-solid fa-left-long"></i>
+        <button class="sair">Sair da página</button>
+        </div>
+        </div>
+    </nav>
+   </aside>
+
     
 </body>
 </html>
