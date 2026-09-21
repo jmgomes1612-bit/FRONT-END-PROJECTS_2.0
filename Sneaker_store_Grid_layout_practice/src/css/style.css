@@ -1,0 +1,22 @@
+*{
+    
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    padding: 20px;
+    min-height: 100dvh;
+    display: grid;
+    gap: 0 20px;
+    grid-template-columns: 205px 1fr;
+    grid-template-rows:50px 1fr ;
+    grid-template-areas: 'header header'
+                         'aside main'
+                         'footer footer';
+
+} 
+
