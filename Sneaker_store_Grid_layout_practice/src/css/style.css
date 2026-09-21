@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Condensed+One&display=swap');
+
 *{
     
     font-family: Roboto;
@@ -14,7 +15,7 @@ body{
     display: grid;
     gap: 0 20px;
     grid-template-columns: 205px 1fr;
-    grid-template-rows:50px 1fr ;
+    grid-template-rows:50px 1fr 50px ;
     grid-template-areas: 'header header'
                          'aside main'
                          'footer footer';
@@ -23,23 +24,24 @@ body{
 header{
     grid-area: header;
     display: flex;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     top: -10px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
+    background: #fff;
     
 }
-.logo{
+.logo , span{
     font-size: 22px;
-    font-family: 'cap';
-    padding: 4px 12px;
+    font-family: Orbitron;
     color: rgb(77, 75, 75);
-    letter-spacing: 4px;
 }
 .logo span{
-    
-    font-family: 'cap';
     color: rgb(43, 183, 226);
 }
 header button{
@@ -53,7 +55,11 @@ header button{
 }
 aside{
     border-radius: 12px;
-    position: sticky;
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    bottom: 20px;
+    width: 205px;
     grid-area: aside;
     background: #dfdddd;
     padding: 20px;
@@ -111,6 +117,59 @@ main{
                          'item-7 item-8 item-9 item-10'   ;
     background: #dfdddd;
     
+}   
+@media (max-width: 1350px){
+
+    main{
+        gap: 10px;
+        padding: 10px;
+        grid-auto-columns: 220px;
+        background: transparent;
+    }
+    aside{
+    
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    bottom: 20px;
+    width: 80px;
+    grid-area: aside;
+    background: #dfdddd;
+    padding: 20px;
+
+    
+
+    }
+    .options{
+        justify-content: center;
+        align-items: center;
+    }
+    .option .btn{
+
+        display: none;
+     
+    }
+    .close-btn{
+        display: none;
+    }
+    .sair{
+        display: none;
+    }
+    body{
+
+    padding: 20px;
+    min-height: 100dvh;
+    display: grid;
+    gap: 0 20px;
+    grid-template-columns: 85px 1fr;
+    grid-template-rows:50px 1fr 50px ;
+    grid-template-areas: 'header header'
+                         'aside main'
+                         'footer footer';
+
+} 
+
+
 }
 .card-item{
     background: radial-gradient( circle ,rgb(46, 46, 46) , rgb(87, 87, 86) , rgb(78, 77, 77));
@@ -158,4 +217,11 @@ main{
     position: relative;
     background: transparent;
 }
+footer{
+     grid-area: footer;
+     text-align: center;
+     display: none;
+     align-items: center;
+     justify-content: center;
 
+}
