@@ -4,65 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <title>Document</title>
 </head>
 <body>
 
     <header>
-        <p class="logo" onclick="fechar()">Lorem<span>Ipsum</span  ></p>
-        <button>Inicio</button>
+        <p class="logo" onclick="fechar()">Logo<span>Tipo</span  ></p>
+        <div class="input-area">
+        <i class="fa-solid fa-magnifying-glass"></i>    
+        <input 
+        type="text"
+        id="searchInput"
+        placeholder="Pesquisar..."    
+        >
+        
+        </div>
+        <nav class="links">
+            <div class="link"><i class="fa-solid fa-house"></i><p>Inicio</p></div>
+            <div class="link"><i class="fa-solid fa-user"></i><p>Conta</p></div>
+        </nav>
     </header>
     <aside id="sidebar">
     
         <nav>
-        <img onclick="fechar()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABTElEQVR4nO2ZQU7DMBBF377AEWg5TLgHXcGm3QPngPZ2hJ4A1m0HWZpKVVS3tpPag+Iv/U00jv9z7MRyoKqqqsq6ZsAa2ABbQK7srfa10r576RH4zRBaPHZ9N6nhHwqHF/UPME0BWBsIL+rPFICNgeCiblMAcixYCbTLEi0x5miVDiwVgJEAvAITYAnsAupdzULbvFsAuDlqM78AsdOag+4sALjRJACiG95paQFgD7x02j51IFzNcyCo5Aa4BDFEeLk2gG+KzD3XYsNLDgDfkxgivOQCOAfRJ7zkBujO+VML2ySAL/wQENEa1SLen3lVhnwnpCRAyHv+VE0shMmtxMICwCQgvA/i9r9vp98sAORytEoHlgqALY/vYOvbQHBRf6UArAwEF/VHCsDM0PH6PYlq9AYlwzf01FTP59uMv5hanTbJI19VVVVFFv0Bbot+QiC4KBsAAAAASUVORK5CYII=" alt="close-window" class="close-btn">
- 
-        <div class="options">
-        <div class="option"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="shopping-cart--v1"/>
-        <button class="btn">Carrinho</button>
-        </div>
-        
-        <div class="option">
-            <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/25/shoes.png" alt="shoes"/>
-        <button class="btn">Categorias</button>
-        </div>
-        
-        <div class="option"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABB0lEQVR4nO3UsSvEYRgH8E/IYjulTJRkkrIoKSWDgbIY2KwWmVikZBCriZLFZDCQLKQY+CuuKFYKEUVXrzrXnfvduZ/F+6ln+r3P833qffsRRVEUfVcXKm1tmMRA4YexlAKbMIxV7GEemcJDo5irUWAD+rGEC7zhBOOoL9aQwV1YolqdmME+7vGBZ2yhu1zzdmiYriAwt/QENpEN/V91jQU0JxnUgffQePrDI2zEIFZwldeTX+dhqdwVJLZRMOQYI+gKr3QWh3gsEpirF+ygV5WyJQaXq1ssosUvPVUYfImpcCU1cZYg9BW76JOCHjyUCL7BMlqlrB1rOMIB1jH0R7/lKIqif+4Tp9pfiyZPvxQAAAAASUVORK5CYII=" alt="nike">
-            <button class="btn">Nike</button>
-        </div>
-        
-        <div class="option">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABAklEQVR4nO3SvyuFYRjG8Q91DAwMkkksspgYrCxGi0kpO3VGxX8gm43FJP8A/wB2Jukogx+LQSQUobce9XY699sbpyzvVXdPPffd97qeH1Sq9J/qxxbuMNFOcBfqeMBXqjPU2gGv4TwHztf6X8AdGE/raWDwhrHfwKdwkiBrmMR7YHKMzrLgYezjMwd4TSk3AoOsVsoaXAaAI/SgEfSfMBRBB9MP6cVmQcplTDedLl+HzeBurOIxDeymvUYAeMYItgtCLP7A53HdYmAWMwUpD9CH26B/j4HM4CYYuEp3vVOQcgFzBf29zGAJHy2aLxhNKaMHz95JutJW/YuyP6pSJaG+AQLDkPScNf8eAAAAAElFTkSuQmCC" alt="external-adidas-a-multinational-corporation-that-designs-and-manufactures-shoes-clothing-and-accessories-fashion-bold-tal-revivo">
-        <button class="btn">Adidas</button>
-        </div>
-        
-        <div class="option">
-            <img src="src/img/newalanceSVG.svg" alt="">
-        <button class="btn">New Balance</button>
-        </div>
-        
-        <div class="option">
-            <img src="src/img/jordan-svgrepo-com.svg" alt="">
-        <button class="btn">Jordan</button>
-        </div>
+            
 
-        <div class="option">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABWElEQVR4nO2TO0tDQRCFPxPxUduK8RdY+A/sNI0ExBeWghaiTdAmgkUKG7GzDUiwsLMUGytBUfDVKFpZaGOCqEXEJDJwVoYlXRqFe2CZOzs7c2bP7IUECf4FroCFFvtDwAfQbGNdWqFj4AFIRQQ7wCew2caas0LTYht1xXuBKrALZHQmYCAkCv3AhIstA2vAONBhm13AC3DgkmZFOgKUgAYwqNi6Yjn5BeBbjVQjibZCwaIOWQeGI+AR6AYqOpxXbEO+NdXn/BVZm10aKAOvgSAjgqK+6+o0q6R34DQiqAF7zs/JliXREjDph2oSPYukrtuUJM+JkykULMiey5re28BbK4kMY9r8Ag41m0qkad4RdAIXLjalJ5/W2tdMfpGS7k29miBPVvEzyRQIwr9SayGRyfsU/gOPReAe6FFHt7qJYR64BmaAG5ezCtxFEjV0m+GYIEGCP4gfMpB/+POdQ58AAAAASUVORK5CYII=" alt="external-vans-an-american-manufacturer-of-skateboarding-shoes-fashion-bold-tal-revivo">
-        <button class="btn">Vans on the walls</button>
-        </div>
-        <div>
-        <i class="fa-solid fa-left-long"></i>
-        <button class="sair">Sair da página</button>
-        </div>
-        </div>
-    </nav>
+                <div class="nav-btn"><i class="fa-solid fa-cart-shopping"></i><p>Carrinho</p></div>
+                <div class="nav-btn"><i class="fa-solid fa-bookmark"></i><p>Guardados</p></div>
+                
+            
+                
+            
+            
+                <div>
+                <div class="nav-btn"><i class="fa-solid fa-shoe-prints"></i><p>Categorias</p><i class="fa-solid fa-chevron-down" id="chevron"></i></div>
+                <ul>
+                    <li>Esportivos</li>
+                    <li>Casuais</li>
+                    <li>Formais</li>
+                </ul>
+                </div>
+                
+                <div>
+                <div class="nav-btn"><i class="fa-solid fa-tags"></i><p>Marcas</p><i class="fa-solid fa-chevron-down" id="chevron"></i></div>
+                <ul>
+                    <li>Nike</li>
+                    <li>Adidas</li>
+                    <li>Vans</li>
+                </ul>
+                
+                </div>
+                
+                <div class="nav-btn"><i class="fa-solid fa-users"></i><p>Sobre nós</p></div>
+                
+                
+
+            
+
+        </nav>
    </aside>
    
    <main class="container">
@@ -70,7 +71,7 @@
         <div class="card-item"style="grid-area: item-1;">
             <img src="src/img/NikeVerdeAltq.jpg" alt="imagem de um item" class="item">
             <div class="item-info">
-                <p class="price">AOA12000</p>
+                <p class="price">12000 KZs</p>
                 <p class="categoria">Ténis</p>
             </div>
             <div class="item-actions">
@@ -82,7 +83,7 @@
         <div class="card-item" style="grid-area: item-2;">
             <img src="src/img/VansEstreitaLargaPreta.jpg" alt="imagem de um item" class="item">
             <div class="item-info">
-                <p class="price">AOA12000</p>
+                <p class="price">12000 KZs</p>
                 <p class="categoria">Ténis</p>
             </div>
             <div class="item-actions">
@@ -94,7 +95,7 @@
         <div class="card-item"style="grid-area: item-3;">
             <img src="src/img/newBalancePreta.jpg" alt="imagem de um item" class="item">
             <div class="item-info">
-                <p class="price">AOA12000</p>
+                <p class="price">12000 KZs</p>
                 <p class="categoria">Ténis</p>
             </div>
             <div class="item-actions">
@@ -106,7 +107,7 @@
         <div class="card-item"style="grid-area: item-4;">
             <img src="src/img/NIKEPRETA.jpg" alt="imagem de um item" class="item">
             <div class="item-info">
-                <p class="price">AOA12000</p>
+                <p class="price">12000 KZs</p>
                 <p class="categoria">Ténis</p>
             </div>
             <div class="item-actions">
@@ -118,7 +119,7 @@
         <div class="card-item"style="grid-area: item-5;">
             <img src="src/img/nikeJordanAzulBrancaEmpilhadas.jpg" alt="imagem de um item" class="item">
             <div class="item-info">
-                <p class="price">AOA12000</p>
+                <p class="price">12000 KZs</p>
                 <p class="categoria">Ténis</p>
             </div>
             <div class="item-actions">
@@ -130,7 +131,7 @@
         <div class="card-item"style="grid-area: item-6;">
             <img src="src/img/VansAzul.jpg" alt="imagem de um item" class="item">
             <div class="item-info">
-                <p class="price">AOA12000</p>
+                <p class="price">12000 KZs</p>
                 <p class="categoria">Ténis</p>
             </div>
             <div class="item-actions">
@@ -142,7 +143,7 @@
         <div class="card-item"style="grid-area: item-7;">
             <img src="src/img/adidassamba.jpg" alt="imagem de um item" class="item">
             <div class="item-info">
-                <p class="price">AOA12000</p>
+                <p class="price">12000 KZs</p>
                 <p class="categoria">Ténis</p>
             </div>
             <div class="item-actions">
@@ -154,7 +155,7 @@
         <div class="card-item"style="grid-area: item-8;">
             <img src="src/img/VansAzulBranca.jpg" alt="imagem de um item" class="item">
             <div class="item-info">
-                <p class="price">AOA12000</p>
+                <p class="price">12000 KZs</p>
                 <p class="categoria">Ténis</p>
             </div>
             <div class="item-actions">
@@ -166,7 +167,7 @@
         <div class="card-item"style="grid-area: item-9;">
             <img src="src/img/vansMocassins.jpg" alt="imagem de um item" class="item">
             <div class="item-info">
-                <p class="price">AOA12000</p>
+                <p class="price">12000 KZs</p>
                 <p class="categoria">Ténis</p>
             </div>
             <div class="item-actions">
@@ -177,7 +178,7 @@
         <div class="card-item"style="grid-area: item-10;">
             <img src="src/img/adidasGrey.jpg" alt="imagem de um item" class="item">
             <div class="item-info">
-                <p class="price">AOA12000</p>
+                <p class="price">12000 KZs</p>
                 <p class="categoria">Ténis</p>
             </div>
             <div class="item-actions">
@@ -188,8 +189,7 @@
 
    </main>
 
-   <footer><p class="copy">&copy;Todos os direitos reservados</p></footer>
-
+   
    <script src="src/js/script.js"></script>
 
     
