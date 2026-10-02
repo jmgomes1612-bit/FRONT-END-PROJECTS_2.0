@@ -53,6 +53,7 @@ header{
     color: rgba(56, 56, 56, 0.356);
 }
 .input-area i{
+    color: #06071a;
     position: relative;
     right: -30px;
 }
