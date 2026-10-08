@@ -31,10 +31,12 @@ html {
 
 
 body {
+    margin-top: var(--header-height);
     min-height: 100dvh;
     font-family: Google Sans;
     background: var(--background);
     color: var(--dark);
+    overflow-x: hidden;
 }
 
 
@@ -442,11 +444,6 @@ body {
 
     width: 100%;
 
-    /*
-        A imagem ocupa todo o espaço disponível.
-        Info + actions ficam sempre em baixo.
-    */
-
     flex: 1;
 
     min-height: 0;
@@ -665,7 +662,7 @@ body {
     }
 
 
-    .logo {
+    .main-page__section .logo {
         display: none;
     }
 

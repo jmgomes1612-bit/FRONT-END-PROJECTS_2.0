@@ -14,14 +14,18 @@
 
     --card-radius: 10px;
 }
+.landing-page__section section{
+
+    width: 100vw;
+
+}
 .lnd-header{
 
-    position: fixed;
+    position: absolute;
 
-    top: 0;
     right: 0;
     left: 0;
-
+    top: 0;
     height: var(--header-height);
 
     z-index: 100;
@@ -38,4 +42,96 @@
         rgba(103, 105, 107, 0.3) 0 1px 2px 0,
         rgba(125, 129, 133, 0.15) 0 2px 6px 2px;
 
+}
+
+.banner{
+ display: grid;
+ position: relative;
+ grid-template-areas: "stack";  
+}
+.banner img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    grid-area: stack;
+
+}
+.banner .intro{
+    grid-area: stack;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    max-width: 500px;
+    min-height: 300px;
+    top: 20%;
+    left: 5%;
+}
+.intro h1{
+    font-size: 75px;    
+}
+.intro h1 span{
+    color: var(--gold);
+}   
+.intro p{
+    text-shadow: 1px px 2px black;
+    text-align: justify;
+}
+    .btn-box{
+
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+
+
+.btn-box button {
+    height: 50px;
+
+    flex: 1;
+
+    max-width: 35%;
+
+    border: 2px solid var(--primary-light);
+
+    border-radius: 10px;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    font-family: inherit;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s,
+        transform 0.2s;
+}
+
+
+.btn-box button:hover {
+    transform: scale(1.05);
+    background: transparent;
+    box-shadow: 2px 2px 15px  rgba(66, 104, 207, 0.61);
+}
+
+
+.btn--buy:hover {
+    background: var(--white);
+    color: var(--dark);
+}
+
+
+.btn--save:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--dark);
 }
