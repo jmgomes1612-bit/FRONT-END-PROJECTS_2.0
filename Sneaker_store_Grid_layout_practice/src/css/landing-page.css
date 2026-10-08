@@ -44,6 +44,7 @@
 }
 
 .banner{
+height: 70vh;
  display: grid;
  position: relative;
  grid-template-areas: "stack";  
@@ -145,20 +146,27 @@
 }
 .mais-vendidos i{
     font-size: 45px;
+    cursor: pointer;
     color: var(--gold);
 }
 .mais-vendidos .container{
     
     background: var(--white);
     border-radius: 12px;
-    max-width: 1000px;
+    width: 800px;
     padding: 20px 35px;    
     display: flex;
-    gap: 2rem;
+    gap: 2rem;  
+    overflow-x: scroll ;
+    
 }
 .mais-vendidos article{
+    min-height: 200px;
+    min-width: 200px;
+    transition: 0.3s;
     
-    width: 250px;
-
     
+}
+.mais-vendidos article:hover{
+    transform: scale(1.05);
 }
