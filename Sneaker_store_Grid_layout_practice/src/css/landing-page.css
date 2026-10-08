@@ -21,8 +21,7 @@
 }
 .lnd-header{
 
-    position: absolute;
-
+    position: fixed;
     right: 0;
     left: 0;
     top: 0;
@@ -39,8 +38,8 @@
     background: var(--white);
 
     box-shadow:
-        rgba(103, 105, 107, 0.3) 0 1px 2px 0,
-        rgba(125, 129, 133, 0.15) 0 2px 6px 2px;
+        rgba(210, 220, 230, 0.459) 0 1px 2px 0,
+        rgba(155, 162, 168, 0.651) 0 2px 6px 2px;
 
 }
 
@@ -134,4 +133,32 @@
     background: var(--gold);
     border-color: var(--gold);
     color: var(--dark);
+}
+.mais-vendidos{
+    width: 100%;
+    background: var(--background);
+    margin-bottom: 22rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mais-vendidos i{
+    font-size: 45px;
+    color: var(--gold);
+}
+.mais-vendidos .container{
+    
+    background: var(--white);
+    border-radius: 12px;
+    max-width: 1000px;
+    padding: 20px 35px;    
+    display: flex;
+    gap: 2rem;
+}
+.mais-vendidos article{
+    
+    width: 250px;
+
+    
 }
