@@ -1,197 +1,556 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
+
+    <title>Sneaker Store</title>
 </head>
+
 <body>
 
-    <header>
-        <p class="logo" onclick="fechar()">Logo<span>Tipo</span  ></p>
-        <div class="input-area">
-        <i class="fa-solid fa-magnifying-glass"></i>    
-        <input 
-        type="text"
-        id="searchInput"
-        placeholder="Pesquisar..."    
-        >
-        
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="#" class="logo">
+            Logo<span>Tipo</span>
+        </a>
+
+        <div class="search">
+
+            <i class="fa-solid fa-magnifying-glass search__icon"></i>
+
+            <input
+                type="search"
+                id="searchInput"
+                class="search__input"
+                placeholder="Pesquisar..."
+                aria-label="Pesquisar produtos"
+            >
+
         </div>
-        <nav class="links">
-            <div class="link"><i class="fa-solid fa-house"></i><p>Inicio</p></div>
-            <div class="link"><i class="fa-solid fa-user"></i><p>Conta</p></div>
+
+        <nav class="header-nav" aria-label="Navegação principal">
+
+            <a href="#" class="header-nav__link">
+                <i class="fa-solid fa-house"></i>
+                <span>Início</span>
+            </a>
+
+            <a href="#" class="header-nav__link">
+                <i class="fa-solid fa-user"></i>
+                <span>Conta</span>
+            </a>
+
         </nav>
+
     </header>
-    <aside id="sidebar">
-    
-        <nav>
-            
 
-                <div class="nav-btn"><i class="fa-solid fa-cart-shopping"></i><p>Carrinho</p></div>
-                <div class="nav-btn"><i class="fa-solid fa-bookmark"></i><p>Guardados</p></div>
-                
-            
-                
-            
-            
-                <div>
-                <div class="nav-btn"><i class="fa-solid fa-shoe-prints"></i><p>Categorias</p><i class="fa-solid fa-chevron-down" id="chevron"></i></div>
-                <ul>
-                    <li>Esportivos</li>
-                    <li>Casuais</li>
-                    <li>Formais</li>
-                </ul>
-                </div>
-                
-                <div>
-                <div class="nav-btn"><i class="fa-solid fa-tags"></i><p>Marcas</p><i class="fa-solid fa-chevron-down" id="chevron"></i></div>
-                <ul>
-                    <li>Nike</li>
-                    <li>Adidas</li>
-                    <li>Vans</li>
-                </ul>
-                
-                </div>
-                
-                <div class="nav-btn"><i class="fa-solid fa-users"></i><p>Sobre nós</p></div>
-                
-                
 
-            
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <nav class="sidebar-nav" aria-label="Menu lateral">
+
+            <a href="#" class="sidebar-link">
+                <span class="sidebar-link__icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </span>
+
+                <span>Carrinho</span>
+            </a>
+
+
+            <a href="#" class="sidebar-link">
+                <span class="sidebar-link__icon">
+                    <i class="fa-solid fa-bookmark"></i>
+                </span>
+
+                <span>Guardados</span>
+            </a>
+
+
+            <!-- CATEGORIAS -->
+            <section class="sidebar-section">
+
+                <button class="sidebar-link sidebar-link--button">
+
+                    <span class="sidebar-link__icon">
+                        <i class="fa-solid fa-shoe-prints"></i>
+                    </span>
+
+                    <span>Categorias</span>
+
+                    <i class="fa-solid fa-chevron-down sidebar-chevron"></i>
+
+                </button>
+
+                <ul class="sidebar-list">
+
+                    <li>
+                        <a href="#">Esportivos</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Casuais</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Formais</a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- MARCAS -->
+            <section class="sidebar-section">
+
+                <button class="sidebar-link sidebar-link--button">
+
+                    <span class="sidebar-link__icon">
+                        <i class="fa-solid fa-tags"></i>
+                    </span>
+
+                    <span>Marcas</span>
+
+                    <i class="fa-solid fa-chevron-down sidebar-chevron"></i>
+
+                </button>
+
+                <ul class="sidebar-list">
+
+                    <li>
+                        <a href="#">Nike</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Adidas</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Vans</a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <a href="#" class="sidebar-link">
+
+                <span class="sidebar-link__icon">
+                    <i class="fa-solid fa-users"></i>
+                </span>
+
+                <span>Sobre nós</span>
+
+            </a>
 
         </nav>
-   </aside>
-   
-   <main class="container">
 
-        <div class="card-item"style="grid-area: item-1;">
-            <img src="src/img/NikeVerdeAltq.jpg" alt="imagem de um item" class="item">
-            <div class="item-info">
-                <p class="price">12000 KZs</p>
-                <p class="categoria">Ténis</p>
-            </div>
-            <div class="item-actions">
-                <button class="buy">Comprar</button>
-                
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
-        <div class="card-item" style="grid-area: item-2;">
-            <img src="src/img/VansEstreitaLargaPreta.jpg" alt="imagem de um item" class="item">
-            <div class="item-info">
-                <p class="price">12000 KZs</p>
-                <p class="categoria">Ténis</p>
-            </div>
-            <div class="item-actions">
-                <button class="buy">Comprar</button>
-                
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
-        <div class="card-item"style="grid-area: item-3;">
-            <img src="src/img/newBalancePreta.jpg" alt="imagem de um item" class="item">
-            <div class="item-info">
-                <p class="price">12000 KZs</p>
-                <p class="categoria">Ténis</p>
-            </div>
-            <div class="item-actions">
-                <button class="buy">Comprar</button>
-                
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
-        <div class="card-item"style="grid-area: item-4;">
-            <img src="src/img/NIKEPRETA.jpg" alt="imagem de um item" class="item">
-            <div class="item-info">
-                <p class="price">12000 KZs</p>
-                <p class="categoria">Ténis</p>
-            </div>
-            <div class="item-actions">
-                <button class="buy">Comprar</button>
-                
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
-        <div class="card-item"style="grid-area: item-5;">
-            <img src="src/img/nikeJordanAzulBrancaEmpilhadas.jpg" alt="imagem de um item" class="item">
-            <div class="item-info">
-                <p class="price">12000 KZs</p>
-                <p class="categoria">Ténis</p>
-            </div>
-            <div class="item-actions">
-                <button class="buy">Comprar</button>
-                
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
-        <div class="card-item"style="grid-area: item-6;">
-            <img src="src/img/VansAzul.jpg" alt="imagem de um item" class="item">
-            <div class="item-info">
-                <p class="price">12000 KZs</p>
-                <p class="categoria">Ténis</p>
-            </div>
-            <div class="item-actions">
-                <button class="buy">Comprar</button>
-                
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
-        <div class="card-item"style="grid-area: item-7;">
-            <img src="src/img/adidassamba.jpg" alt="imagem de um item" class="item">
-            <div class="item-info">
-                <p class="price">12000 KZs</p>
-                <p class="categoria">Ténis</p>
-            </div>
-            <div class="item-actions">
-                <button class="buy">Comprar</button>
-                
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
-        <div class="card-item"style="grid-area: item-8;">
-            <img src="src/img/VansAzulBranca.jpg" alt="imagem de um item" class="item">
-            <div class="item-info">
-                <p class="price">12000 KZs</p>
-                <p class="categoria">Ténis</p>
-            </div>
-            <div class="item-actions">
-                <button class="buy">Comprar</button>
-                
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
-        <div class="card-item"style="grid-area: item-9;">
-            <img src="src/img/vansMocassins.jpg" alt="imagem de um item" class="item">
-            <div class="item-info">
-                <p class="price">12000 KZs</p>
-                <p class="categoria">Ténis</p>
-            </div>
-            <div class="item-actions">
-                <button class="buy">Comprar</button>
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
-        <div class="card-item"style="grid-area: item-10;">
-            <img src="src/img/adidasGrey.jpg" alt="imagem de um item" class="item">
-            <div class="item-info">
-                <p class="price">12000 KZs</p>
-                <p class="categoria">Ténis</p>
-            </div>
-            <div class="item-actions">
-                <button class="buy">Comprar</button>
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
+    </aside>
 
-   </main>
 
-   
-   <script src="src/js/script.js"></script>
+    <!-- MAIN -->
+    <main class="products">
 
-    
+        <!-- CARD 1 -->
+        <article class="product-card product-card--1">
+
+            <img
+                src="src/img/NikeVerdeAltq.jpg"
+                alt="Tênis Nike verde"
+                class="product-card__image"
+            >
+
+            <div class="product-card__info">
+
+                <p class="product-card__name">Nike air force 1</p>
+
+                <span class="product-card__price">
+                    12.000 Kz
+                </span>
+
+                <span class="product-card__category">
+                    Ténis
+                </span>
+
+            </div>
+
+            <div class="product-card__actions">
+
+                <button type="button" class="btn btn--buy">
+                    Comprar
+                </button>
+
+                <button type="button" class="btn btn--save">
+                    Guardar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 2 -->
+        <article class="product-card product-card--2">
+
+            <img
+                src="src/img/VansEstreitaLargaPreta.jpg"
+                alt="Tênis Vans preto"
+                class="product-card__image"
+            >
+
+            <div class="product-card__info">
+
+                <p class="product-card__name">Nike air force 1</p>
+
+                <span class="product-card__price">
+                    12.000 Kz
+                </span>
+
+                <span class="product-card__category">
+                    Ténis
+                </span>
+
+            </div>
+
+            <div class="product-card__actions">
+
+                <button type="button" class="btn btn--buy">
+                    Comprar
+                </button>
+
+                <button type="button" class="btn btn--save">
+                    Guardar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 3 -->
+        <article class="product-card product-card--3">
+
+            <img
+                src="src/img/newBalancePreta.jpg"
+                alt="Tênis New Balance preto"
+                class="product-card__image"
+            >
+
+            <div class="product-card__info">
+
+                <p class="product-card__name">Nike air force 1</p>
+
+                <span class="product-card__price">
+                    12.000 Kz
+                </span>
+
+                <span class="product-card__category">
+                    Ténis
+                </span>
+
+            </div>
+
+            <div class="product-card__actions">
+
+                <button type="button" class="btn btn--buy">
+                    Comprar
+                </button>
+
+                <button type="button" class="btn btn--save">
+                    Guardar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 4 -->
+        <article class="product-card product-card--4">
+
+            <img
+                src="src/img/NIKEPRETA.jpg"
+                alt="Tênis Nike preto"
+                class="product-card__image"
+            >
+
+            <div class="product-card__info">
+
+                <p class="product-card__name">Nike air force 1</p>
+
+                <span class="product-card__price">
+                    12.000 Kz
+                </span>
+
+                <span class="product-card__category">
+                    Ténis
+                </span>
+
+            </div>
+
+            <div class="product-card__actions">
+
+                <button type="button" class="btn btn--buy">
+                    Comprar
+                </button>
+
+                <button type="button" class="btn btn--save">
+                    Guardar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 5 -->
+        <article class="product-card product-card--5">
+
+            <img
+                src="src/img/nikeJordanAzulBrancaEmpilhadas.jpg"
+                alt="Tênis Nike Jordan azul e branco"
+                class="product-card__image"
+            >
+
+            <div class="product-card__info">
+
+                <p class="product-card__name">Nike air force 1</p>
+
+                <span class="product-card__price">
+                    12.000 Kz
+                </span>
+
+                <span class="product-card__category">
+                    Ténis
+                </span>
+
+            </div>
+
+            <div class="product-card__actions">
+
+                <button type="button" class="btn btn--buy">
+                    Comprar
+                </button>
+
+                <button type="button" class="btn btn--save">
+                    Guardar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 6 -->
+        <article class="product-card product-card--6">
+
+            <img
+                src="src/img/VansAzul.jpg"
+                alt="Tênis Vans azul"
+                class="product-card__image"
+            >
+
+            <div class="product-card__info">
+
+                <p class="product-card__name">Nike air force 1</p>
+
+                <span class="product-card__price">
+                    12.000 Kz
+                </span>
+
+                <span class="product-card__category">
+                    Ténis
+                </span>
+
+            </div>
+
+            <div class="product-card__actions">
+
+                <button type="button" class="btn btn--buy">
+                    Comprar
+                </button>
+
+                <button type="button" class="btn btn--save">
+                    Guardar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 7 -->
+        <article class="product-card product-card--7">
+
+            <img
+                src="src/img/adidassamba.jpg"
+                alt="Tênis Adidas Samba"
+                class="product-card__image"
+            >
+
+            <div class="product-card__info">
+
+                <p class="product-card__name">Nike air force 1</p>
+
+                <span class="product-card__price">
+                    12.000 Kz
+                </span>
+
+                <span class="product-card__category">
+                    Ténis
+                </span>
+
+            </div>
+
+            <div class="product-card__actions">
+
+                <button type="button" class="btn btn--buy">
+                    Comprar
+                </button>
+
+                <button type="button" class="btn btn--save">
+                    Guardar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 8 -->
+        <article class="product-card product-card--8">
+
+            <img
+                src="src/img/VansAzulBranca.jpg"
+                alt="Tênis Vans azul e branco"
+                class="product-card__image"
+            >
+
+            <div class="product-card__info">
+
+                <p class="product-card__name">Nike air force 1</p>
+
+                <span class="product-card__price">
+                    12.000 Kz
+                </span>
+
+                <span class="product-card__category">
+                    Ténis
+                </span>
+
+            </div>
+
+            <div class="product-card__actions">
+
+                <button type="button" class="btn btn--buy">
+                    Comprar
+                </button>
+
+                <button type="button" class="btn btn--save">
+                    Guardar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 9 -->
+        <article class="product-card product-card--9">
+
+            <img
+                src="src/img/vansMocassins.jpg"
+                alt="Mocassim Vans"
+                class="product-card__image"
+            >
+
+            <div class="product-card__info">
+
+                <p class="product-card__name">Nike air force 1</p>
+
+                <span class="product-card__price">
+                    12.000 Kz
+                </span>
+
+                <span class="product-card__category">
+                    Ténis
+                </span>
+
+            </div>
+
+            <div class="product-card__actions">
+
+                <button type="button" class="btn btn--buy">
+                    Comprar
+                </button>
+
+                <button type="button" class="btn btn--save">
+                    Guardar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 10 -->
+        <article class="product-card product-card--10">
+
+            <img
+                src="src/img/adidasGrey.jpg"
+                alt="Tênis Adidas cinzento"
+                class="product-card__image"
+            >
+
+            <div class="product-card__info">
+
+                <p class="product-card__name">Nike air force 1</p>
+
+                <span class="product-card__price">
+                    12.000 Kz
+                </span>
+
+                <span class="product-card__category">
+                    Ténis
+                </span>
+
+            </div>
+
+            <div class="product-card__actions">
+
+                <button type="button" class="btn btn--buy">
+                    Comprar
+                </button>
+
+                <button type="button" class="btn btn--save">
+                    Guardar
+                </button>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <script src="src/js/script.js"></script>
+
 </body>
+
 </html>
